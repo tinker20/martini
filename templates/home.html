@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Home{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="home" %}
+{% endblock %}
+
+{% block navbar-right %}
+  {% if not user.is_authenticated %}
+<a class="btn btn-default" href="{% url 'accounts:login' %}" role="button">Log in</a>
+<a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Sign up</a>
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
+{% block splash %}
+  <div class="jumbotron jumbotron-carousel corporate-jumbo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-8">
+          <h1>{% include "_brandname.html" %}</h1>
+          <p>A local online marketplace.</p>
+	  <a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Sign up for Free!</a>
+        </div>
+        <div class="col-md-4 col-sm-4">
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock splash %}
+
+{% block container %}
+<a name="about"></a>
+
+<div class="container">
+ <center> <div class="row">
+    <div class="col-lg-4">
+      <h2><strong>What?</strong></h2>
+      <p>We transform the unorganized retail sector into organized retail sector by providing them a platform to sell online.</p>
+    </div>
+    <div class="col-lg-4">
+      <h2><strong>Why?</strong></h2>
+      <p>Sellers only pay a nominal subscription fee. You don't have to wait for payments after you've delivered the products.</p>
+    </div>
+    <div class="col-lg-4">
+      <h2><strong>How?</strong></h2>
+      <p>You get notified as soon as a customer places an order via sms/email. You dispatch the product and get paid.</p>
+    </div>
+  </div>
+  <a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Sign up</a></strong></center>
+</div>
+
+{% endblock container %}
+
+{% block scripts %}
+<script src="{% static 'site/js/site.js' %}"></script>
+{% endblock scripts %}
+
+
