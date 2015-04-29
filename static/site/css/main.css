@@ -67,8 +67,8 @@ body>.navbar-transparent {
 
 /* Home page styling */
 .corporate-jumbo {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)),
-      url("http://i.imgur.com/OGHcOoC.jpg");
+     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)),
+      url("/static/site/img/banner.png");
     background-repeat: no-repeat;
     background-position: 80% center;
     background-attachment: fixed;
@@ -116,7 +116,7 @@ body>.navbar-transparent {
 
 /* About page styling */
 #sec1 {
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJklEQVQIW2NkAIILFy78NzAwYATRjCABZEGwAEwFiA1WBlIOUwkA72gTdDIYVO4AAAAASUVORK5CYII=) repeat;
+    background:url("/static/site/img/back.jpg");
 }
 
 /* Profile page styling */
