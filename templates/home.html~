@@ -11,8 +11,8 @@
 
 {% block navbar-right %}
   {% if not user.is_authenticated %}
-<a class="btn btn-default" href="{% url 'accounts:login' %}" role="button">Log in</a>
-<a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Sign up</a>
+<a class="btn btn-warning" href="{% url 'accounts:login' %}" role="button">Log in</a>
+<a class="btn btn-success" href="{% url 'accounts:signup' %}" role="button">Sign up</a>
   {% else %}
     {{ block.super }}
   {% endif %}
@@ -25,6 +25,7 @@
         <div class="col-md-8 col-sm-8">
           <h1><strong><b>{% include "_brandname.html" %}</b></strong></h1>
           <p><b>A local online marketplace.</b></p>
+
 	  <a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Sign up for the beta version.</a>
         </div>
         <div class="col-md-4 col-sm-4">
