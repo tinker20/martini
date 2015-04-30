@@ -67,8 +67,8 @@ body>.navbar-transparent {
 
 /* Home page styling */
 .corporate-jumbo {
-     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)),
-      url("/static/site/img/banner.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)),
+      url("http://i.imgur.com/OGHcOoC.jpg");
     background-repeat: no-repeat;
     background-position: 80% center;
     background-attachment: fixed;
@@ -85,13 +85,12 @@ body>.navbar-transparent {
 }
 
 .corporate-jumbo p, .corporate-jumbo h1 {
-    color: #FF7B00;
-    text-align: center;
+    color: #eee;
     text-shadow: 0px 0px 2px black;
 }
 
 .corporate-jumbo p {
-    font-weight: 1000;
+    font-weight: 500;
 }
 
 .corporate-jumbo .well legend {
@@ -117,18 +116,12 @@ body>.navbar-transparent {
 
 /* About page styling */
 #sec1 {
-    background:url("/static/site/img/back.jpg");
-}
-
-.text-page1  {
-  color :#e0e0e0;
-  padding: 70px 0px 30px 20px;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJklEQVQIW2NkAIILFy78NzAwYATRjCABZEGwAEwFiA1WBlIOUwkA72gTdDIYVO4AAAAASUVORK5CYII=) repeat;
 }
 
 /* Profile page styling */
 .profile-head {
-    color: #e0e0e0;
-    background:url("/static/site/img/back1.jpg");
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJklEQVQIW2NkAIILFy78NzAwYATRjCABZEGwAEwFiA1WBlIOUwkA72gTdDIYVO4AAAAASUVORK5CYII=) repeat;
     padding: 70px 0px 30px 20px;
 }
 .profile-body {
@@ -136,7 +129,6 @@ body>.navbar-transparent {
 }
 
 .text-page {
-    color: #0A002D;
     padding: 120px 0;
 }
 
@@ -185,4 +177,3 @@ body>.navbar-transparent {
 .form-box form .form-control:focus {
   z-index: 2;
 }
-
